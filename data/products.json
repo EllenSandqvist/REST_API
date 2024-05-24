@@ -1,0 +1,31 @@
+{
+  "sweaters": [
+    { "id": 1, "color": "blue", "price": 122.99 },
+    { "id": 2, "color": "Navy", "price": 39.99 },
+    { "id": 3, "color": "White", "price": 37.99 },
+    { "id": 4, "color": "Brown", "price": 36.99 },
+    { "id": 5, "color": "Olive", "price": 38.99 }
+  ],
+  "t-shirts": [
+    { "id": 1, "color": "Red", "price": 19.99 },
+    { "id": 2, "color": "Blue", "price": 21.99 },
+    { "id": 3, "color": "Green", "price": 18.99 },
+    { "id": 4, "color": "Black", "price": 22.99 },
+    { "id": 5, "color": "White", "price": 20.99 }
+  ],
+  "socks": [
+    { "id": 2, "color": "Green", "price": 19.99 },
+    { "id": 3, "color": "Gray", "price": 5.99 },
+    { "id": 4, "color": "Blue", "price": 5.99 }
+  ],
+  "jackets": [
+    { "id": 1, "color": "Black", "price": 99.99 },
+    { "id": 2, "color": "Brown", "price": 109.99 },
+    { "id": 3, "color": "Aqua", "price": 499.99 }
+  ],
+  "pants": [
+    { "id": 4, "color": "Khaki", "price": 55.99 },
+    { "id": 5, "color": "Navy", "price": 53.99 },
+    { "id": 6, "color": "Aqua", "price": 499.99 }
+  ]
+}
