@@ -1,31 +1,247 @@
 {
   "sweaters": [
-    { "id": 1, "color": "blue", "price": 122.99 },
-    { "id": 2, "color": "Navy", "price": 39.99 },
-    { "id": 3, "color": "White", "price": 37.99 },
-    { "id": 4, "color": "Brown", "price": 36.99 },
-    { "id": 5, "color": "Olive", "price": 38.99 }
+    {
+      "id": 1,
+      "image": "https://images.unsplash.com/photo-1519804270019-39e929a7afb5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": 122.99,
+      "size": "M",
+      "brand": "BlueMountain",
+      "description": "A cozy and stylish medium-sized sweater from BlueMountain, perfect for chilly weather."
+    },
+    {
+      "id": 2,
+      "image": "https://images.unsplash.com/photo-1608984361471-ff566593088f?q=80&w=1948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": 39.99,
+      "size": "L",
+      "brand": "OceanBreeze",
+      "description": "A large-sized, comfortable, and affordable sweater by OceanBreeze, ideal for everyday wear."
+    },
+    {
+      "id": 3,
+      "image": "https://images.unsplash.com/photo-1527424803383-098895227b9f?q=80&w=1937&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": 37.99,
+      "size": "S",
+      "brand": "SnowFlake",
+      "description": "A stylish small-sized sweater from SnowFlake, perfect for a fashionable winter look."
+    },
+    {
+      "id": 4,
+      "image": "https://images.unsplash.com/photo-1543427127-c331ce4346b8?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": 36.99,
+      "size": "XL",
+      "brand": "CoffeeBean",
+      "description": "An extra-large, warm, and trendy sweater by CoffeeBean, suitable for colder days."
+    },
+    {
+      "id": 5,
+      "image": "https://images.unsplash.com/photo-1506634572416-48cdfe530110?q=80&w=1970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": 38.99,
+      "size": "M",
+      "brand": "ForestGlen",
+      "description": "A medium-sized, stylish sweater from ForestGlen, combining comfort and fashion."
+    },
+    { "id": 6, "clothing-items": "sweaters", "description": "test" },
+    { "id": 7, "clothing-items": "sweaters", "description": "" },
+    { "id": 8, "clothing-items": "sweaters", "description": "test" },
+    {
+      "id": 9,
+      "image": "",
+      "price": "12345",
+      "size": "sz",
+      "brand": "low",
+      "description": "this is low"
+    },
+    {
+      "id": 10,
+      "image": "https://plus.unsplash.com/premium_photo-1674718917261-108fa6d346d1?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": "10000",
+      "size": "m",
+      "brand": "skelrw",
+      "description": "many sweaters"
+    }
   ],
   "t-shirts": [
-    { "id": 1, "color": "Red", "price": 19.99 },
-    { "id": 2, "color": "Blue", "price": 21.99 },
-    { "id": 3, "color": "Green", "price": 18.99 },
-    { "id": 4, "color": "Black", "price": 22.99 },
-    { "id": 5, "color": "White", "price": 20.99 }
+    {
+      "id": 1,
+      "image": "https://images.unsplash.com/photo-1562157873-818bc0726f68?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": 19.99,
+      "size": "M",
+      "brand": "Fuego",
+      "description": "A classic medium-sized T-shirt from Fuego, perfect for casual wear."
+    },
+    {
+      "id": 2,
+      "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": 21.99,
+      "size": "L",
+      "brand": "SkyHigh",
+      "description": "A comfortable large-sized T-shirt by SkyHigh, great for everyday use."
+    },
+    {
+      "id": 3,
+      "image": "https://images.unsplash.com/photo-1594032194509-0056023973b2?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTUwfHx0JTIwc2hpcnR8ZW58MHx8MHx8fDA%3D",
+      "price": 18.99,
+      "size": "S",
+      "brand": "EmeraldIsle",
+      "description": "A stylish small-sized T-shirt from EmeraldIsle, ideal for a trendy look."
+    },
+    {
+      "id": 4,
+      "image": "https://images.unsplash.com/photo-1618354691438-25bc04584c23?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fHQlMjBzaGlydHxlbnwwfHwwfHx8MA%3D%3D",
+      "price": 22.99,
+      "size": "XL",
+      "brand": "MidnightRaven",
+      "description": "An extra-large T-shirt from MidnightRaven, combining comfort and style."
+    },
+    {
+      "id": 5,
+      "image": "https://images.unsplash.com/photo-1620799139507-2a76f79a2f4d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fHQlMjBzaGlydHxlbnwwfHwwfHx8MA%3D%3D",
+      "price": 20.99,
+      "size": "M",
+      "brand": "PureCotton",
+      "description": "A medium-sized T-shirt from PureCotton, perfect for a comfortable and casual look."
+    }
   ],
   "socks": [
-    { "id": 2, "color": "Green", "price": 19.99 },
-    { "id": 3, "color": "Gray", "price": 5.99 },
-    { "id": 4, "color": "Blue", "price": 5.99 }
-  ],
-  "jackets": [
-    { "id": 1, "color": "Black", "price": 99.99 },
-    { "id": 2, "color": "Brown", "price": 109.99 },
-    { "id": 3, "color": "Aqua", "price": 499.99 }
+    {
+      "id": 1,
+      "image": "https://images.unsplash.com/photo-1564379976409-79bd0786fff1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c29ja3N8ZW58MHx8MHx8fDA%3D",
+      "price": 19.99,
+      "size": "One Size",
+      "brand": "HappyFeet",
+      "description": "Comfortable and stylish socks from HappyFeet, one size fits all."
+    },
+    {
+      "id": 2,
+      "image": "https://images.unsplash.com/photo-1504659913281-61817e6e2e9b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": 19.99,
+      "size": "One Size",
+      "brand": "HappyFeet",
+      "description": "A pair of cozy and durable socks from HappyFeet, designed for maximum comfort."
+    },
+    {
+      "id": 3,
+      "image": "https://plus.unsplash.com/premium_photo-1684952850099-396e7183bc6c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c29ja3N8ZW58MHx8MHx8fDA%3D",
+      "price": 5.99,
+      "size": "One Size",
+      "brand": "SilverLining",
+      "description": "Affordable and comfortable socks from SilverLining, perfect for everyday wear."
+    },
+    {
+      "id": 4,
+      "image": "https://images.unsplash.com/photo-1615486364462-ef6363adbc18?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": 13.99,
+      "size": "One Size",
+      "brand": "ComfyCozy",
+      "description": "A pair of soft and warm socks from ComfyCozy, ideal for colder days."
+    },
+    {
+      "id": 5,
+      "image": "https://images.unsplash.com/photo-1631180543602-727e1197619d?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": 7.99,
+      "size": "One Size",
+      "brand": "ActiveStride",
+      "description": "Durable and breathable socks from ActiveStride, perfect for active lifestyles."
+    },
+    {
+      "id": 6,
+      "image": "",
+      "price": "43",
+      "size": "234",
+      "brand": "high",
+      "description": "this is a sock"
+    }
   ],
   "pants": [
-    { "id": 4, "color": "Khaki", "price": 55.99 },
-    { "id": 5, "color": "Navy", "price": 53.99 },
-    { "id": 6, "color": "Aqua", "price": 499.99 }
+    {
+      "id": 1,
+      "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": 49.99,
+      "size": "32",
+      "brand": "UrbanChic",
+      "description": "Stylish and comfortable pants from UrbanChic, size 32, perfect for any occasion."
+    },
+    {
+      "id": 2,
+      "image": "https://images.unsplash.com/photo-1579920896716-51bfb40ec2a0?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHBhbnRzfGVufDB8fDB8fHww",
+      "price": 59.99,
+      "size": "34",
+      "brand": "ClassicDenim",
+      "description": "A pair of classic denim pants from ClassicDenim, size 34, combining durability and style."
+    },
+    {
+      "id": 3,
+      "image": "https://images.unsplash.com/photo-1602293589930-45aad59ba3ab?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": 45.99,
+      "size": "30",
+      "brand": "EcoWear",
+      "description": "Eco-friendly and comfortable pants from EcoWear, size 30, perfect for a sustainable lifestyle."
+    },
+    {
+      "id": 4,
+      "image": "https://images.unsplash.com/photo-1551854838-212c50b4c184?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": 39.99,
+      "size": "36",
+      "brand": "AdventureGear",
+      "description": "Durable and practical pants from AdventureGear, size 36, perfect for outdoor activities."
+    },
+    {
+      "id": 5,
+      "image": "https://plus.unsplash.com/premium_photo-1665664652418-91f260a84842?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": 52.99,
+      "size": "31",
+      "brand": "ModernFit",
+      "description": "A pair of modern and sleek pants from ModernFit, size 31, ideal for a contemporary look."
+    }
+  ],
+  "shoes": [
+    {
+      "id": 1,
+      "image": "https://plus.unsplash.com/premium_photo-1663100769321-9eb8fe5a8e6b?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": 79.99,
+      "size": "10",
+      "brand": "TrailBlazers",
+      "description": "Comfortable and durable shoes from TrailBlazers, size 10, ideal for hiking and outdoor activities."
+    },
+    {
+      "id": 2,
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": 99.99,
+      "size": "9",
+      "brand": "UrbanStride",
+      "description": "Stylish and versatile shoes from UrbanStride, size 9, perfect for urban exploration."
+    },
+    {
+      "id": 3,
+      "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": 89.99,
+      "size": "8",
+      "brand": "RunFast",
+      "description": "Lightweight and breathable shoes from RunFast, size 8, perfect for running and sports."
+    },
+    {
+      "id": 4,
+      "image": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=1898&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": 129.99,
+      "size": "11",
+      "brand": "MountainPeak",
+      "description": "Rugged and durable shoes from MountainPeak, size 11, designed for mountain adventures."
+    },
+    {
+      "id": 5,
+      "image": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": 109.99,
+      "size": "9.5",
+      "brand": "ElegantSteps",
+      "description": "Elegant and stylish shoes from ElegantSteps, size 9.5, perfect for formal occasions."
+    },
+    {
+      "id": 6,
+      "image": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": "899",
+      "size": "s",
+      "brand": "serw",
+      "description": "werwetwr"
+    }
   ]
 }

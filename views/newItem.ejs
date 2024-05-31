@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <div class="dropdown-container">
+            <label for="clothing-items">Choose a clothing item:</label>
+            <select id="clothing-items" name="clothing-items">
+                <option value="sweaters">Sweaters</option>
+                <option value="shoes">Shoes</option>
+                <option value="socks">Socks</option>
+                <option value="t-shirts">T-Shirts</option>
+                <option value="pants">Pants</option>
+            </select>
+        </div>
+        <div class="inputDiv">
+            <label for="image"> Image: </label> <input id="image" type="url">
+            <label for="price"> Price: </label><input id="price" type="number">
+            <label for="size"> Size: </label><input id="size" type="text">
+            <label for="brand"> Brand: </label><input id="brand" type="text>">
+            <label for="description"> Description: </label> <textarea id="description" name="" id=""></textarea>
+        </div>
+    </form>
+    <script>
+        document.getElementById('clothing-items').addEventListener('change', function() {
+            const form = document.getElementById('clothing-form');
+            const selectedOption = this.options[this.selectedIndex];
+            form.action = selectedOption.getAttribute('data-action');
+            console.log(form.action)
+        });
+    </script>
+</body>
+</html>

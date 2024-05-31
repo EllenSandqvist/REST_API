@@ -1,0 +1,17 @@
+<%- include("./layout/header") %>
+    <main>
+        <div class="bigContainer">
+            <a href="/products/<%= categoryName %>"><h2><%= categoryName %></h2></a>
+            <div class="singleProductContainer">
+                <img src="<%= productProperties.image %>" alt="<%= categoryName %> Image">
+                <div class="productDetails">
+                    <p><strong>Price:</strong> $<%= productProperties.price %></p>
+                    <p><strong>Size:</strong> <%= productProperties.size %></p>
+                    <p><strong>Brand:</strong> <%= productProperties.brand %></p>
+                    <p><strong>Description:</strong> <%= productProperties.description %></p>
+                </div>
+            </div>    
+        </div>
+    </main>
+<%- include("./layout/footer") %>
+

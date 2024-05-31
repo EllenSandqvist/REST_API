@@ -1,0 +1,130 @@
+::before,
+::after,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+header,
+footer {
+  height: 8vh;
+  background-color: #cfdbeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  margin-bottom: 4em;
+}
+
+main {
+  min-height: 80vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #01b280;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+.bigContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.catagoryContainer {
+  display: flex;
+  height: 30rem;
+  overflow: hidden;
+  flex-wrap: wrap;
+  margin-bottom: 5em;
+  padding: 1em;
+}
+
+.catagoryContainer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+  padding: 0.5em;
+}
+
+.productContainer {
+  padding: 1em;
+  height: 100%;
+  width: 15em;
+  border: 2px solid rgb(23, 23, 23);
+  border-radius: 5px;
+  margin: 0 0.3em;
+  box-shadow: 6px 5px 3px 2px grey;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+img {
+  max-width: 180px;
+  height: 250px;
+  /* display: block; */
+  object-fit: cover;
+}
+
+.singleProductContainer {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  margin-top: 3em;
+  border: 2px solid black;
+  padding: 1em;
+  width: 50%;
+  border-radius: 20px;
+}
+
+.productDetails {
+  line-height: 1.5;
+}
+
+.productDetails p {
+  margin-bottom: 0.4em;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    background-color: lightblue;
+  }
+  .catagoryContainer ul {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 50px;
+  }
+
+  .catagoryContainer {
+    height: 100%;
+  }
+
+  .singleProductContainer {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}

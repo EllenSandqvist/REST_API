@@ -1,10 +1,19 @@
 import express from "express";
 import fs from "fs";
+import path from "path";
 
 const app = express();
 
+app.set("view engine", "ejs");
+
+//this is needed in order to work for ES6
+const __dirname = path.resolve();
+
 //Middle ware to handle request body
 app.use(express.json());
+app.use(express.urlencoded());
+
+app.use(express.static("public"));
 
 //Get json data
 const products = JSON.parse(fs.readFileSync("./data/products.json"));
@@ -115,7 +124,39 @@ app.patch("/api/users/:id", (req, res) => {
   });
 });
 
-//USER ROUTES
+//PRODUCT ROUTES
+//static page for adding product
+app.get("/new", (_request, _response) => {
+  _response
+    .status(200)
+    .sendFile("./public/pages/newItem.html", { root: __dirname });
+});
+
+//dynamic product pages
+app.get("/products", (req, res) => {
+  res.status(200).render("Home", { productData: products });
+});
+
+app.get("/products/:type", (req, res) => {
+  const queryId = parseInt(req.query.id);
+  const { type } = req.params;
+
+  if (!products[type])
+    return res.status(400).send(`Invalid product type:${type}`);
+
+  if (!queryId)
+    return res.status(200).render("category", {
+      categoryItems: products[type],
+      categoryName: type,
+    });
+
+  if (isNaN(queryId)) return res.status(400).send(`Invalid id:${id}`);
+  const findProduct = products[type].find((prod) => prod.id === queryId);
+  res
+    .status(200)
+    .render("product", { productProperties: findProduct, categoryName: type });
+});
+
 //get all products
 app.get("/api/products", (req, res) => {
   res.status(200).json(products);
@@ -128,6 +169,7 @@ app.get("/api/products/:type", (req, res) => {
     return res.status(400).send(`Invalid product type:${type}`);
   res.status(200).json(products[type]);
 });
+
 //get a product from a specific category
 app.get("/api/products/:type/:id", (req, res) => {
   const { type, id } = req.params;
@@ -147,6 +189,7 @@ app.post("/api/products/:type", (req, res) => {
     body,
     params: { type },
   } = req;
+  console.log(body);
   if (!products[type])
     return res.status(400).send(`Invalid product type:${type}`);
   const category = products[type];
@@ -158,7 +201,7 @@ app.post("/api/products/:type", (req, res) => {
   fs.writeFile("./data/products.json", JSON.stringify(products), (err) => {
     if (err) return res.status(500).send("something went wrong", err.message);
 
-    res.status(201).send(newProduct);
+    res.status(201).redirect(`/products/${type}?id=${newId}`);
   });
 });
 

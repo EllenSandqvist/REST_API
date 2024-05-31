@@ -1,0 +1,27 @@
+<%- include("./layout/header") %>
+    <main>
+        <div class="bigContainer">
+            <a href="/products/<%= categoryName %>"><h2><%= categoryName %></h2></a>
+            <div class="catagoryContainer">
+                <ul>
+                <% categoryItems.forEach(item => { %>
+                  <div class="productContainer">
+
+                    <a href="/products/<%= categoryName %>?id=<%= item.id %>">
+                        <li>
+                          <img src="<%= item.image %>" alt="<%= categoryName %> Image">
+                          <div class="productDetails">
+                            <p>Price: $<%= item.price %></p>
+                            <p>Size: <%= item.size %></p>
+                            <p>Brand: <%= item.brand %></p>
+                          </div>
+                        </li>
+                      </a>    
+                    </div>
+                <% }); %>
+                </ul>
+            </div>    
+        </div>
+    </main>
+<%- include("./layout/footer") %>
+    

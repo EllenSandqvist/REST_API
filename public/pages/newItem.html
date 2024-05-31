@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/api/products/sweaters" method="post" id="clothing-form">
+        <div class="dropdown-container">
+            <label for="clothing-items">Choose a clothing item:</label>
+            <select id="clothing-items">
+                <option value="sweaters">Sweaters</option>
+                <option value="shoes">Shoes</option>
+                <option value="socks">Socks</option>
+                <option value="t-shirts">T-Shirts</option>
+                <option value="pants">Pants</option>
+            </select>
+        </div>
+        <div class="inputDiv">
+            <label for="image"> Image: </label> <input id="image" name="image" type="url"><br>
+            <label for="price"> Price: </label><input id="price" name="price" type="number"><br>
+            <label for="size"> Size: </label><input id="size" name="size" type="text"><br>
+            <label for="brand"> Brand: </label><input id="brand" name="brand" type="text>"><br>
+            <label for="description"> Description: </label> <textarea id="description" name="description" id=""></textarea><br>
+        </div>
+        <button type="submit">Add Product</button>
+    </form>
+    <script>
+      document.getElementById('clothing-items').addEventListener('change', function() {
+          const form = document.getElementById('clothing-form');
+          const selectedOption = this.options[this.selectedIndex];
+          console.log(selectedOption.value)
+          form.action = `api/products/${selectedOption.value}`;
+      });
+  </script>
+</body>
+</html>
